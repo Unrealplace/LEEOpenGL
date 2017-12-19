@@ -37,11 +37,16 @@ long getFileContent(char *buffer, long len, const char *filePath)
 
 static GLuint createGLShader(const char *shaderText, GLenum shaderType)
 {
+    //创建着色器，通过glCreateShader创建着色器，type为着色器的类型GL_VERTEX_SHADER 和 GL_FRAGMENT_SHADER
     GLuint shader = glCreateShader(shaderType);
+    //添加着色器源程序，将着色器源码关联到一个着色器对象shader上。string是一个有count行GLchar类型的字符串组成的数组，用来表示着色器的源代码数据。string可以以NULL结尾，也可以不是。如果length为NULL则string给出的每行都是以NULL结尾，否则length中必须有count个表示string长度的元素。（也就是说字符串以NULL结尾我们不用指定长度，否则必须制定每行的长度）
+//    glShaderSource (GLuint shader, GLsizei count, const GLchar* const *string, const GLint* length)  __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0);
     glShaderSource(shader, 1, &shaderText, NULL);
+    //编译着色器源程序
     glCompileShader(shader);
     
     int compiled = 0;
+    //容错处理，通过glGetShaderiv获取编译状态，通过glGetShaderInfoLog获取错误信息。
     glGetShaderiv(shader, GL_COMPILE_STATUS, &compiled);
     if (!compiled) {
         GLint infoLen = 0;
@@ -54,13 +59,14 @@ static GLuint createGLShader(const char *shaderText, GLenum shaderType)
                 free(infoLog);
             }
         }
+        //删除着色器
         glDeleteShader(shader);
         return 0;
     }
     
     return shader;
 }
-
+//创建着色器程序
 GLuint createGLProgram(const char *vertext, const char *frag)
 {
     GLuint program = glCreateProgram();
@@ -71,12 +77,13 @@ GLuint createGLProgram(const char *vertext, const char *frag)
     if (vertShader == 0 || fragShader == 0) {
         return 0;
     }
-    
+    //装配着色器
     glAttachShader(program, vertShader);
     glAttachShader(program, fragShader);
-    
+    //链接着色器程序
     glLinkProgram(program);
     GLint success;
+    //容错处理
     glGetProgramiv(program, GL_LINK_STATUS, &success);
     if (!success) {
         GLint infoLen;
@@ -95,9 +102,10 @@ GLuint createGLProgram(const char *vertext, const char *frag)
         glDeleteProgram(program);
         return 0;
     }
-    
+    //卸载着色器程序
     glDetachShader(program, vertShader);
     glDetachShader(program, fragShader);
+    //删除着色器
     glDeleteShader(vertShader);
     glDeleteShader(fragShader);
     
@@ -141,31 +149,4 @@ GLuint createTexture2D(GLenum format, int width, int height, void *data)
     glTexImage2D(GL_TEXTURE_2D, 0, format, width, height, 0, format, GL_UNSIGNED_BYTE, data);
     glBindTexture(GL_TEXTURE_2D, 0);
     return texture;
-}
-
-GLuint createVAO(void(*setting)())
-{
-#ifdef GL_ES_VERSION_3_0
-    GLuint vao;
-    glGenVertexArrays(1, &vao);
-    glBindVertexArray(vao);
-    if (setting) {
-        setting();
-    }
-    glBindVertexArray(0);
-    return vao;
-#endif
-    
-#if GL_OES_vertex_array_object
-    GLuint vao;
-//    glGenVertexArrays(1, &vao);
-//    glBindVertexArray(vao);
-    if (setting) {
-        setting();
-    }
-//    glBindVertexArray(0);
-    return vao;
-#endif
-    
-    return 0;
 }

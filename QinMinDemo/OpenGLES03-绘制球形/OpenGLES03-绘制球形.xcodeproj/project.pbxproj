@@ -239,7 +239,7 @@
 				TargetAttributes = {
 					B94253C01E4DF8B600247FB6 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = SP96U9X4RF;
+						DevelopmentTeam = 9BQNL96S8U;
 						ProvisioningStyle = Automatic;
 					};
 					B94253D91E4DF8B600247FB6 = {
@@ -461,7 +461,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = SP96U9X4RF;
+				DEVELOPMENT_TEAM = 9BQNL96S8U;
 				INFOPLIST_FILE = "OpenGLES03-绘制球形/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.shanhujiang.OpenGLES03-----";
@@ -473,7 +473,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = SP96U9X4RF;
+				DEVELOPMENT_TEAM = 9BQNL96S8U;
 				INFOPLIST_FILE = "OpenGLES03-绘制球形/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.shanhujiang.OpenGLES03-----";
@@ -550,6 +550,7 @@
 				B94253F01E4DF8B600247FB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B94253F11E4DF8B600247FB6 /* Build configuration list for PBXNativeTarget "OpenGLES03-绘制球形Tests" */ = {
 			isa = XCConfigurationList;
@@ -558,6 +559,7 @@
 				B94253F31E4DF8B600247FB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B94253F41E4DF8B600247FB6 /* Build configuration list for PBXNativeTarget "OpenGLES03-绘制球形UITests" */ = {
 			isa = XCConfigurationList;
@@ -566,6 +568,7 @@
 				B94253F61E4DF8B600247FB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
