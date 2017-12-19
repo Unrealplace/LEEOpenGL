@@ -239,7 +239,7 @@
 				TargetAttributes = {
 					B91304ED1E4D633B008984D0 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = SP96U9X4RF;
+						DevelopmentTeam = CD678479PM;
 						ProvisioningStyle = Automatic;
 					};
 					B91305061E4D633C008984D0 = {
@@ -461,7 +461,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = SP96U9X4RF;
+				DEVELOPMENT_TEAM = CD678479PM;
 				INFOPLIST_FILE = "OpenGLES02-着色器/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.shanhujiang.OpenGLES02----";
@@ -473,7 +473,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = SP96U9X4RF;
+				DEVELOPMENT_TEAM = CD678479PM;
 				INFOPLIST_FILE = "OpenGLES02-着色器/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.shanhujiang.OpenGLES02----";
