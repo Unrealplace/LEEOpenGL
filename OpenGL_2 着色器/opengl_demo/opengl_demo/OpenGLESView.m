@@ -110,8 +110,9 @@
 - (void)setupGLProgram {
     NSString *vertFile = [[NSBundle mainBundle] pathForResource:@"vert.glsl" ofType:nil];
     NSString *fragFile = [[NSBundle mainBundle] pathForResource:@"frag.glsl" ofType:nil];
+    // 内部编译，链接，容错处理，创建着色器程序 并返回地址
     _program = createGLProgramFromFile(vertFile.UTF8String, fragFile.UTF8String);
-    
+    //使用着色器程序
     glUseProgram(_program);
 }
 
@@ -134,8 +135,20 @@
         1.0f, 1.0f, 0.0f
     };
     
+    //glGetAttribLocation是用来获得vertex attribute的入口的，
     GLint colorSlot = glGetAttribLocation(_program, "color");
+    
+    //glVertexAttribPointer (GLuint indx, GLint size, GLenum type, GLboolean normalized, GLsizei stride, const GLvoid* ptr)
+//    indx 指定要修改的顶点着色器中顶点变量id；
+//    size 指定每个顶点属性的组件数量。必须为1、2、3或者4。
+//    type 指定数组中每个组件的数据类型。可用的符号常量有GL_BYTE, GL_UNSIGNED_BYTE, GL_SHORT,GL_UNSIGNED_SHORT, GL_FIXED, 和 GL_FLOAT，初始值为GL_FLOAT；
+//    normalized 指定当被访问时，固定点数据值是否应该被归一化（GL_TRUE）或者直接转换为固定点值（GL_FALSE）；
+//    stride 指定连续顶点属性之间的偏移量。如果为0，那么顶点属性会被理解为：它们是紧密排列在一起的。初始值为0；
+//    ptr 顶点数据指针。
+    
     glVertexAttribPointer(colorSlot, 3, GL_FLOAT, GL_FALSE, 0, colors);
+    
+    //着色器能否读取到数据，由是否启用了对应的属性决定，这就是glEnableVertexAttribArray的功能，允许顶点着色器读取GPU（服务器端）数据。
     glEnableVertexAttribArray(colorSlot);
     
     

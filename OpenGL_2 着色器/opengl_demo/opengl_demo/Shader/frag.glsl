@@ -4,7 +4,7 @@ varying vec3 outColor;
 
 void main()
 {
-    gl_FragColor = vec4(outColor, 1.0);
+    gl_FragColor = vec4(outColor, 2.0);
 }
 //着色器(Shader)是运行在GPU上的小程序。
 //这些小程序为图形渲染管线的某个特定部分而运行。
