@@ -506,6 +506,7 @@
 				TargetAttributes = {
 					B94753A11E5575A1000BB369 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = H57Q7L6C8G;
 						ProvisioningStyle = Automatic;
 					};
 					B94753BA1E5575A1000BB369 = {
@@ -666,6 +667,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -713,6 +715,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -734,7 +737,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H57Q7L6C8G;
 				INFOPLIST_FILE = "OpenGLES07-像素的代数运算/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -742,8 +747,9 @@
 					"$(PROJECT_DIR)/OpenGLES07-像素的代数运算/Utils/jpeg/prebuilt/ios",
 					"$(PROJECT_DIR)/OpenGLES07-像素的代数运算/Utils/png/prebuilt/ios",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shanhujiang.OpenGLES07--------";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shanhujiang.OpenGL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -751,7 +757,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H57Q7L6C8G;
 				INFOPLIST_FILE = "OpenGLES07-像素的代数运算/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -759,8 +767,9 @@
 					"$(PROJECT_DIR)/OpenGLES07-像素的代数运算/Utils/jpeg/prebuilt/ios",
 					"$(PROJECT_DIR)/OpenGLES07-像素的代数运算/Utils/png/prebuilt/ios",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shanhujiang.OpenGLES07--------";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shanhujiang.OpenGL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -833,6 +842,7 @@
 				B94753D11E5575A1000BB369 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B94753D21E5575A1000BB369 /* Build configuration list for PBXNativeTarget "OpenGLES07-像素的代数运算Tests" */ = {
 			isa = XCConfigurationList;
@@ -841,6 +851,7 @@
 				B94753D41E5575A1000BB369 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B94753D51E5575A1000BB369 /* Build configuration list for PBXNativeTarget "OpenGLES07-像素的代数运算UITests" */ = {
 			isa = XCConfigurationList;
@@ -849,6 +860,7 @@
 				B94753D71E5575A1000BB369 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
