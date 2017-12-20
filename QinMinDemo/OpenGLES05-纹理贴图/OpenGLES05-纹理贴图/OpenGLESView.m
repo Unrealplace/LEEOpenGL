@@ -132,6 +132,7 @@
         0.5f,  0.5f, 0.0f, 1.0f, 0.0f,   // 右上
         0.5f, -0.5f, 0.0f, 1.0f, 1.0f,   // 右下
         -0.5f, -0.5f, 0.0f, 0.0f, 1.0f,  // 左下
+
         -0.5f, -0.5f, 0.0f, 0.0f, 1.0f,  // 左下
         -0.5f,  0.5f, 0.0f, 0.0f, 0.0f,  // 左上
         0.5f,  0.5f, 0.0f, 1.0f, 0.0f,   // 右上
@@ -149,7 +150,7 @@
 
 - (void)setupTexure
 {
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"wood" ofType:@"jpg"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"flower" ofType:@"jpg"];
     
     unsigned char *data;
     int size;
@@ -159,6 +160,7 @@
     // 加载纹理
     if (read_jpeg_file(path.UTF8String, &data, &size, &width, &height) < 0) {
         printf("%s\n", "decode fail");
+        return;
     }
     
     // 创建纹理
