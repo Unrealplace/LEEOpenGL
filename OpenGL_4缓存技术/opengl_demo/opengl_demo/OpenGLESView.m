@@ -22,7 +22,7 @@ typedef struct {
     EAGLContext     *_context;
     GLuint          _colorRenderBuffer;
     GLuint          _frameBuffer;
-
+    
     GLuint          _program;
     int             _vertCount;
     
@@ -146,15 +146,47 @@ typedef struct {
     }
 }
 
+
+//顶点缓存VBO
+
+//普通的顶点数组的传输，需要在绘制的时候频繁地从CPU到GPU传输顶点数据，这种做法效率低下，为了加快显示速度，显卡增加了一个扩展 VBO (Vertex Buffer object)，即顶点缓存。
+//它直接在 GPU 中开辟一个缓存区域来存储顶点数据，因为它是用来缓存储顶点数据，因此被称之为顶点缓存。
+//使用顶点缓存能够大大较少了CPU到GPU 之间的数据拷贝开销，因此显著地提升了程序运行的效率。
+
+
+//注意：如果需要在OpenGL ES2.0上使用VAO，可以使用苹果扩展的相关的API，具体扩展如下：
+//
+//GLvoid glGenVertexArraysOES(GLsizei n, GLuint *arrays)
+//GLvoid glBindVertexArrayOES(GLuint array);
+//GLvoid glDeleteVertexArraysOES(GLsizei n, const GLuint *arrays);;
+//GLboolean glIsVertexArrayOES(GLuint array);
+
+
 - (void)setupVAO
 {
+//    顶点数组对象VAO
+//
+//    VAO的全名是Vertex ArrayObject。它不用作存储数据，但它与顶点绘制相关。
+//    它的定位是状态对象，记录存储状态信息。
+//    VAO记录的是一次绘制中做需要的信息，这包括数据在哪里、数据格式是什么等信息。
+//    VAO其实可以看成一个容器，可以包括多个VBO。
+//    由于它进一步将VBO容于其中，所以绘制效率将在VBO的基础上更进一步。
+//    目前OpenGL ES3.0及以上才支持顶点数组对象。
+    
+    
+    //创建顶点数组对象
+    //参数 n ： 表示顶点数组对象的个数
+    //参数 arrays ：顶点数组对象句柄
     glGenVertexArrays(1, &_vao);
+    
+    //将顶点数组对象设置为当前顶点数组对象
     glBindVertexArray(_vao);
     
-    // VBO
+    // VBO 生成顶点缓存对象 vertext buffer object
     GLuint vbo = createVBO(GL_ARRAY_BUFFER, GL_STATIC_DRAW, sizeof(Vertex) * (_vertCount + 1), _vertext);
     
     glBindBuffer(GL_ARRAY_BUFFER, vbo);
+    
     glEnableVertexAttribArray(0);
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), NULL);
     
@@ -162,6 +194,10 @@ typedef struct {
     glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), NULL+sizeof(GLfloat)*3);
     
     glBindVertexArray(0);
+    
+    //      释放顶点数组对象
+    //     glDeleteVertexArrays (GLsizei n, const GLuint* arrays);
+
 }
 
 #pragma mark - Clean
@@ -178,11 +214,12 @@ typedef struct {
 {
     glClearColor(1.0, 1.0, 0, 1.0);
     glClear(GL_COLOR_BUFFER_BIT);
-    glLineWidth(2.0);
+    glLineWidth(3.0);
     
     glViewport(0, 0, self.frame.size.width, self.frame.size.height);
     
     // VAO
+    //创建顶点数组对象VAO。通过VAO容易我们包裹了VBO和数组传递等操作，使用的时候只要激活当前的VAO便可以完成绘制，加快了绘制效率。
     glBindVertexArray(_vao);
     
     glDrawArrays(GL_LINE_STRIP, 0, _vertCount);
@@ -192,3 +229,4 @@ typedef struct {
 }
 
 @end
+

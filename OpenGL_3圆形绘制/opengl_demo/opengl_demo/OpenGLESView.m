@@ -129,6 +129,7 @@ typedef struct {
     Vertex * vertext =  (Vertex*)malloc(sizeof(Vertex) * _vertCount);//申请100份结构体内存空间
     memset(vertext, 0x00, sizeof(Vertex)*_vertCount);//内存空间初始化为0x00;
     
+    // 此处思维要转换，不能直接用正方形来想问题，要先从矩形来想问题，然后进行矫正，如果是矩形那么就是椭圆，有两个不同的半径。
     float a = 0.8;//水平方向的半径
     float b = a * self.frame.size.width / self.frame.size.height; //垂直方向的半径，没看懂
     
@@ -152,7 +153,6 @@ typedef struct {
     glEnableVertexAttribArray(glGetAttribLocation(_program, "color"));
     glVertexAttribPointer(glGetAttribLocation(_program, "color"), 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), vertext+sizeof(GLfloat)*3);
     
-    
 //    OpenGLES图元的绘制方式有GL_POINTS 、GL_LINES、 GL_LINE_LOOP 、GL_LINE_STRIP、GL_TRIANGLES 、GL_TRIANGLE_STRIP 、GL_TRIANGLE_FAN 这几种，每个都有自己独特的作用。在使用时根据自己的需求选择不同的绘制方式进行绘制。
     //GL_POINTS    点
 //    GL_LINES    线段
@@ -161,7 +161,6 @@ typedef struct {
 //    GL_TRIANGLES    三角形
 //    GL_TRIANGLE_STRIP    三角形条带
 //    GL_TRIANGLE_FAN    三角形扇
-    
     
     //GL_TRIANGLE_FAN 以(v0,v1,v2),(v0,v2,v3),(v0,v3,v4)的形式绘制三角形。
     //GL_TRIANGLE_STRIP 它是由最少3个点构成（正好3个点就是一个GL_TRIANGLES）每增加1个点，新增的点会和之前已有的两个点构成新的三角形，依次类推。（由于是圆形，效果并不明显）
@@ -173,7 +172,7 @@ typedef struct {
 
     
     
-    glDrawArrays(GL_LINES, 0, _vertCount);
+    glDrawArrays(GL_TRIANGLE_FAN, 0, _vertCount);
 
     free(vertext);
     vertext = NULL;
