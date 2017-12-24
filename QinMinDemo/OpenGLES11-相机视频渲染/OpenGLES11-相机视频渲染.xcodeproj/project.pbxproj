@@ -350,7 +350,7 @@
 				TargetAttributes = {
 					041C4EC91E84B82800111213 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = NFTVSJ4FK7;
+						DevelopmentTeam = 9BQNL96S8U;
 						ProvisioningStyle = Automatic;
 					};
 					041C4EE21E84B82800111213 = {
@@ -573,7 +573,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = NFTVSJ4FK7;
+				DEVELOPMENT_TEAM = 9BQNL96S8U;
 				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/OpenGLES11-相机视频渲染/Vendors/libyuv/include";
 				INFOPLIST_FILE = "OpenGLES11-相机视频渲染/Info.plist";
@@ -592,7 +592,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = NFTVSJ4FK7;
+				DEVELOPMENT_TEAM = 9BQNL96S8U;
 				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/OpenGLES11-相机视频渲染/Vendors/libyuv/include";
 				INFOPLIST_FILE = "OpenGLES11-相机视频渲染/Info.plist";
