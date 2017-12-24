@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "OpenGLESView.h"
 
 @interface ViewController ()
 
@@ -16,13 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    self.view = [[OpenGLESView alloc] initWithFrame:self.view.bounds];
 }
 
 

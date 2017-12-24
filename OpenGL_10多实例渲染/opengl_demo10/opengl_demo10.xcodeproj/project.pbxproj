@@ -13,6 +13,26 @@
 		B6225C7F1FEF754600E085ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6225C7E1FEF754600E085ED /* Assets.xcassets */; };
 		B6225C821FEF754600E085ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6225C801FEF754600E085ED /* LaunchScreen.storyboard */; };
 		B6225C851FEF754600E085ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6225C841FEF754600E085ED /* main.m */; };
+		B6225C8D1FEF995800E085ED /* OpenGLESView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6225C8C1FEF995800E085ED /* OpenGLESView.m */; };
+		B6225CD41FEF9E9400E085ED /* wood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6225C8E1FEF9E9300E085ED /* wood.jpg */; };
+		B6225CD51FEF9E9400E085ED /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6225C8F1FEF9E9300E085ED /* 1.jpg */; };
+		B6225CD61FEF9E9400E085ED /* GLUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = B6225C911FEF9E9400E085ED /* GLUtil.c */; };
+		B6225CD71FEF9E9400E085ED /* JpegUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = B6225C9F1FEF9E9400E085ED /* JpegUtil.c */; };
+		B6225CDD1FEF9E9400E085ED /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6225CAD1FEF9E9400E085ED /* libjpeg.a */; };
+		B6225CDE1FEF9E9400E085ED /* PngUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = B6225CB81FEF9E9400E085ED /* PngUtil.c */; };
+		B6225CE41FEF9E9400E085ED /* libpng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6225CC61FEF9E9400E085ED /* libpng.a */; };
+		B6225CE51FEF9E9400E085ED /* TextureUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = B6225CC71FEF9E9400E085ED /* TextureUtil.c */; };
+		B6225CE61FEF9E9400E085ED /* cameo.glsl in Resources */ = {isa = PBXBuildFile; fileRef = B6225CCA1FEF9E9400E085ED /* cameo.glsl */; };
+		B6225CE71FEF9E9400E085ED /* cirlce.glsl in Resources */ = {isa = PBXBuildFile; fileRef = B6225CCB1FEF9E9400E085ED /* cirlce.glsl */; };
+		B6225CE81FEF9E9400E085ED /* frag.glsl in Resources */ = {isa = PBXBuildFile; fileRef = B6225CCC1FEF9E9400E085ED /* frag.glsl */; };
+		B6225CE91FEF9E9400E085ED /* gray.glsl in Resources */ = {isa = PBXBuildFile; fileRef = B6225CCD1FEF9E9400E085ED /* gray.glsl */; };
+		B6225CEA1FEF9E9400E085ED /* mosaic.glsl in Resources */ = {isa = PBXBuildFile; fileRef = B6225CCE1FEF9E9400E085ED /* mosaic.glsl */; };
+		B6225CEB1FEF9E9400E085ED /* upsidedown.glsl in Resources */ = {isa = PBXBuildFile; fileRef = B6225CCF1FEF9E9400E085ED /* upsidedown.glsl */; };
+		B6225CEC1FEF9E9400E085ED /* vert.glsl in Resources */ = {isa = PBXBuildFile; fileRef = B6225CD01FEF9E9400E085ED /* vert.glsl */; };
+		B6225CED1FEF9E9400E085ED /* watercolor.glsl in Resources */ = {isa = PBXBuildFile; fileRef = B6225CD11FEF9E9400E085ED /* watercolor.glsl */; };
+		B6225CEE1FEF9E9400E085ED /* noise.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6225CD21FEF9E9400E085ED /* noise.jpg */; };
+		B6225CEF1FEF9E9400E085ED /* flower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6225CD31FEF9E9400E085ED /* flower.jpg */; };
+		B6225CF21FEF9EFE00E085ED /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B6225CF11FEF9EF200E085ED /* libz.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +46,38 @@
 		B6225C811FEF754600E085ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6225C831FEF754600E085ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6225C841FEF754600E085ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6225C8B1FEF995800E085ED /* OpenGLESView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGLESView.h; sourceTree = "<group>"; };
+		B6225C8C1FEF995800E085ED /* OpenGLESView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGLESView.m; sourceTree = "<group>"; };
+		B6225C8E1FEF9E9300E085ED /* wood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wood.jpg; sourceTree = "<group>"; };
+		B6225C8F1FEF9E9300E085ED /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		B6225C911FEF9E9400E085ED /* GLUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GLUtil.c; sourceTree = "<group>"; };
+		B6225C921FEF9E9400E085ED /* GLUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLUtil.h; sourceTree = "<group>"; };
+		B6225C9B1FEF9E9400E085ED /* jconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jconfig.h; sourceTree = "<group>"; };
+		B6225C9C1FEF9E9400E085ED /* jerror.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jerror.h; sourceTree = "<group>"; };
+		B6225C9D1FEF9E9400E085ED /* jmorecfg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jmorecfg.h; sourceTree = "<group>"; };
+		B6225C9E1FEF9E9400E085ED /* jpeglib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jpeglib.h; sourceTree = "<group>"; };
+		B6225C9F1FEF9E9400E085ED /* JpegUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = JpegUtil.c; sourceTree = "<group>"; };
+		B6225CA01FEF9E9400E085ED /* JpegUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpegUtil.h; sourceTree = "<group>"; };
+		B6225CAD1FEF9E9400E085ED /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjpeg.a; sourceTree = "<group>"; };
+		B6225CB51FEF9E9400E085ED /* png.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = png.h; sourceTree = "<group>"; };
+		B6225CB61FEF9E9400E085ED /* pngconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pngconf.h; sourceTree = "<group>"; };
+		B6225CB71FEF9E9400E085ED /* pnglibconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pnglibconf.h; sourceTree = "<group>"; };
+		B6225CB81FEF9E9400E085ED /* PngUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PngUtil.c; sourceTree = "<group>"; };
+		B6225CB91FEF9E9400E085ED /* PngUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PngUtil.h; sourceTree = "<group>"; };
+		B6225CC61FEF9E9400E085ED /* libpng.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpng.a; sourceTree = "<group>"; };
+		B6225CC71FEF9E9400E085ED /* TextureUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TextureUtil.c; sourceTree = "<group>"; };
+		B6225CC81FEF9E9400E085ED /* TextureUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextureUtil.h; sourceTree = "<group>"; };
+		B6225CCA1FEF9E9400E085ED /* cameo.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cameo.glsl; sourceTree = "<group>"; };
+		B6225CCB1FEF9E9400E085ED /* cirlce.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cirlce.glsl; sourceTree = "<group>"; };
+		B6225CCC1FEF9E9400E085ED /* frag.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = frag.glsl; sourceTree = "<group>"; };
+		B6225CCD1FEF9E9400E085ED /* gray.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gray.glsl; sourceTree = "<group>"; };
+		B6225CCE1FEF9E9400E085ED /* mosaic.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mosaic.glsl; sourceTree = "<group>"; };
+		B6225CCF1FEF9E9400E085ED /* upsidedown.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = upsidedown.glsl; sourceTree = "<group>"; };
+		B6225CD01FEF9E9400E085ED /* vert.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vert.glsl; sourceTree = "<group>"; };
+		B6225CD11FEF9E9400E085ED /* watercolor.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = watercolor.glsl; sourceTree = "<group>"; };
+		B6225CD21FEF9E9400E085ED /* noise.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = noise.jpg; sourceTree = "<group>"; };
+		B6225CD31FEF9E9400E085ED /* flower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flower.jpg; sourceTree = "<group>"; };
+		B6225CF11FEF9EF200E085ED /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +85,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6225CF21FEF9EFE00E085ED /* libz.tbd in Frameworks */,
+				B6225CDD1FEF9E9400E085ED /* libjpeg.a in Frameworks */,
+				B6225CE41FEF9E9400E085ED /* libpng.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +99,7 @@
 			children = (
 				B6225C741FEF754600E085ED /* opengl_demo10 */,
 				B6225C731FEF754600E085ED /* Products */,
+				B6225CF01FEF9EF200E085ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +114,18 @@
 		B6225C741FEF754600E085ED /* opengl_demo10 */ = {
 			isa = PBXGroup;
 			children = (
+				B6225C8F1FEF9E9300E085ED /* 1.jpg */,
+				B6225CD31FEF9E9400E085ED /* flower.jpg */,
+				B6225CD21FEF9E9400E085ED /* noise.jpg */,
+				B6225C8E1FEF9E9300E085ED /* wood.jpg */,
+				B6225CC91FEF9E9400E085ED /* Shader */,
+				B6225C901FEF9E9400E085ED /* Utils */,
 				B6225C751FEF754600E085ED /* AppDelegate.h */,
 				B6225C761FEF754600E085ED /* AppDelegate.m */,
 				B6225C781FEF754600E085ED /* ViewController.h */,
 				B6225C791FEF754600E085ED /* ViewController.m */,
+				B6225C8B1FEF995800E085ED /* OpenGLESView.h */,
+				B6225C8C1FEF995800E085ED /* OpenGLESView.m */,
 				B6225C7B1FEF754600E085ED /* Main.storyboard */,
 				B6225C7E1FEF754600E085ED /* Assets.xcassets */,
 				B6225C801FEF754600E085ED /* LaunchScreen.storyboard */,
@@ -69,6 +133,133 @@
 				B6225C841FEF754600E085ED /* main.m */,
 			);
 			path = opengl_demo10;
+			sourceTree = "<group>";
+		};
+		B6225C901FEF9E9400E085ED /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B6225C911FEF9E9400E085ED /* GLUtil.c */,
+				B6225C921FEF9E9400E085ED /* GLUtil.h */,
+				B6225C931FEF9E9400E085ED /* jpeg */,
+				B6225CAE1FEF9E9400E085ED /* png */,
+				B6225CC71FEF9E9400E085ED /* TextureUtil.c */,
+				B6225CC81FEF9E9400E085ED /* TextureUtil.h */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B6225C931FEF9E9400E085ED /* jpeg */ = {
+			isa = PBXGroup;
+			children = (
+				B6225C941FEF9E9400E085ED /* include */,
+				B6225C9F1FEF9E9400E085ED /* JpegUtil.c */,
+				B6225CA01FEF9E9400E085ED /* JpegUtil.h */,
+				B6225CA11FEF9E9400E085ED /* prebuilt */,
+			);
+			path = jpeg;
+			sourceTree = "<group>";
+		};
+		B6225C941FEF9E9400E085ED /* include */ = {
+			isa = PBXGroup;
+			children = (
+				B6225C9A1FEF9E9400E085ED /* ios */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		B6225C9A1FEF9E9400E085ED /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				B6225C9B1FEF9E9400E085ED /* jconfig.h */,
+				B6225C9C1FEF9E9400E085ED /* jerror.h */,
+				B6225C9D1FEF9E9400E085ED /* jmorecfg.h */,
+				B6225C9E1FEF9E9400E085ED /* jpeglib.h */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		B6225CA11FEF9E9400E085ED /* prebuilt */ = {
+			isa = PBXGroup;
+			children = (
+				B6225CAC1FEF9E9400E085ED /* ios */,
+			);
+			path = prebuilt;
+			sourceTree = "<group>";
+		};
+		B6225CAC1FEF9E9400E085ED /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				B6225CAD1FEF9E9400E085ED /* libjpeg.a */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		B6225CAE1FEF9E9400E085ED /* png */ = {
+			isa = PBXGroup;
+			children = (
+				B6225CAF1FEF9E9400E085ED /* include */,
+				B6225CB81FEF9E9400E085ED /* PngUtil.c */,
+				B6225CB91FEF9E9400E085ED /* PngUtil.h */,
+				B6225CBA1FEF9E9400E085ED /* prebuilt */,
+			);
+			path = png;
+			sourceTree = "<group>";
+		};
+		B6225CAF1FEF9E9400E085ED /* include */ = {
+			isa = PBXGroup;
+			children = (
+				B6225CB41FEF9E9400E085ED /* ios */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		B6225CB41FEF9E9400E085ED /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				B6225CB51FEF9E9400E085ED /* png.h */,
+				B6225CB61FEF9E9400E085ED /* pngconf.h */,
+				B6225CB71FEF9E9400E085ED /* pnglibconf.h */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		B6225CBA1FEF9E9400E085ED /* prebuilt */ = {
+			isa = PBXGroup;
+			children = (
+				B6225CC51FEF9E9400E085ED /* ios */,
+			);
+			path = prebuilt;
+			sourceTree = "<group>";
+		};
+		B6225CC51FEF9E9400E085ED /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				B6225CC61FEF9E9400E085ED /* libpng.a */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		B6225CC91FEF9E9400E085ED /* Shader */ = {
+			isa = PBXGroup;
+			children = (
+				B6225CCA1FEF9E9400E085ED /* cameo.glsl */,
+				B6225CCB1FEF9E9400E085ED /* cirlce.glsl */,
+				B6225CCC1FEF9E9400E085ED /* frag.glsl */,
+				B6225CCD1FEF9E9400E085ED /* gray.glsl */,
+				B6225CCE1FEF9E9400E085ED /* mosaic.glsl */,
+				B6225CCF1FEF9E9400E085ED /* upsidedown.glsl */,
+				B6225CD01FEF9E9400E085ED /* vert.glsl */,
+				B6225CD11FEF9E9400E085ED /* watercolor.glsl */,
+			);
+			path = Shader;
+			sourceTree = "<group>";
+		};
+		B6225CF01FEF9EF200E085ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6225CF11FEF9EF200E085ED /* libz.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,9 +320,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6225CD41FEF9E9400E085ED /* wood.jpg in Resources */,
 				B6225C821FEF754600E085ED /* LaunchScreen.storyboard in Resources */,
+				B6225CEB1FEF9E9400E085ED /* upsidedown.glsl in Resources */,
 				B6225C7F1FEF754600E085ED /* Assets.xcassets in Resources */,
+				B6225CEA1FEF9E9400E085ED /* mosaic.glsl in Resources */,
+				B6225CE81FEF9E9400E085ED /* frag.glsl in Resources */,
+				B6225CEF1FEF9E9400E085ED /* flower.jpg in Resources */,
+				B6225CEE1FEF9E9400E085ED /* noise.jpg in Resources */,
+				B6225CE91FEF9E9400E085ED /* gray.glsl in Resources */,
 				B6225C7D1FEF754600E085ED /* Main.storyboard in Resources */,
+				B6225CEC1FEF9E9400E085ED /* vert.glsl in Resources */,
+				B6225CE71FEF9E9400E085ED /* cirlce.glsl in Resources */,
+				B6225CD51FEF9E9400E085ED /* 1.jpg in Resources */,
+				B6225CE61FEF9E9400E085ED /* cameo.glsl in Resources */,
+				B6225CED1FEF9E9400E085ED /* watercolor.glsl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +345,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6225CD61FEF9E9400E085ED /* GLUtil.c in Sources */,
+				B6225CD71FEF9E9400E085ED /* JpegUtil.c in Sources */,
 				B6225C7A1FEF754600E085ED /* ViewController.m in Sources */,
+				B6225C8D1FEF995800E085ED /* OpenGLESView.m in Sources */,
+				B6225CDE1FEF9E9400E085ED /* PngUtil.c in Sources */,
+				B6225CE51FEF9E9400E085ED /* TextureUtil.c in Sources */,
 				B6225C851FEF754600E085ED /* main.m in Sources */,
 				B6225C771FEF754600E085ED /* AppDelegate.m in Sources */,
 			);
@@ -280,8 +488,23 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H57Q7L6C8G;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = opengl_demo10/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/opengl_demo10/Utils/jpeg/prebuilt/android/arm64-v8a",
+					"$(PROJECT_DIR)/opengl_demo10/Utils/jpeg/prebuilt/android/armeabi",
+					"$(PROJECT_DIR)/opengl_demo10/Utils/jpeg/prebuilt/android/armeabi-v7a",
+					"$(PROJECT_DIR)/opengl_demo10/Utils/jpeg/prebuilt/android/x86",
+					"$(PROJECT_DIR)/opengl_demo10/Utils/jpeg/prebuilt/ios",
+					"$(PROJECT_DIR)/opengl_demo10/Utils/png/prebuilt/android/arm64-v8a",
+					"$(PROJECT_DIR)/opengl_demo10/Utils/png/prebuilt/android/armeabi",
+					"$(PROJECT_DIR)/opengl_demo10/Utils/png/prebuilt/android/armeabi-v7a",
+					"$(PROJECT_DIR)/opengl_demo10/Utils/png/prebuilt/android/x86",
+					"$(PROJECT_DIR)/opengl_demo10/Utils/png/prebuilt/ios",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.LiYang.start.opengl-demo10";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -294,8 +517,23 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H57Q7L6C8G;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = opengl_demo10/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/opengl_demo10/Utils/jpeg/prebuilt/android/arm64-v8a",
+					"$(PROJECT_DIR)/opengl_demo10/Utils/jpeg/prebuilt/android/armeabi",
+					"$(PROJECT_DIR)/opengl_demo10/Utils/jpeg/prebuilt/android/armeabi-v7a",
+					"$(PROJECT_DIR)/opengl_demo10/Utils/jpeg/prebuilt/android/x86",
+					"$(PROJECT_DIR)/opengl_demo10/Utils/jpeg/prebuilt/ios",
+					"$(PROJECT_DIR)/opengl_demo10/Utils/png/prebuilt/android/arm64-v8a",
+					"$(PROJECT_DIR)/opengl_demo10/Utils/png/prebuilt/android/armeabi",
+					"$(PROJECT_DIR)/opengl_demo10/Utils/png/prebuilt/android/armeabi-v7a",
+					"$(PROJECT_DIR)/opengl_demo10/Utils/png/prebuilt/android/x86",
+					"$(PROJECT_DIR)/opengl_demo10/Utils/png/prebuilt/ios",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.LiYang.start.opengl-demo10";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
