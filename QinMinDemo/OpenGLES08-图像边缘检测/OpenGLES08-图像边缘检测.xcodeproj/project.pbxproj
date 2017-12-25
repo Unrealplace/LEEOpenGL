@@ -207,7 +207,7 @@
 				TargetAttributes = {
 					B954633C1E5AC46300D0D59A = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = SP96U9X4RF;
+						DevelopmentTeam = 9BQNL96S8U;
 						ProvisioningStyle = Automatic;
 					};
 					B95463551E5AC46300D0D59A = {
@@ -425,7 +425,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = SP96U9X4RF;
+				DEVELOPMENT_TEAM = 9BQNL96S8U;
 				INFOPLIST_FILE = "OpenGLES08-图像边缘检测/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.shanhujiang.OpenGLES08-------";
@@ -437,7 +437,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = SP96U9X4RF;
+				DEVELOPMENT_TEAM = 9BQNL96S8U;
 				INFOPLIST_FILE = "OpenGLES08-图像边缘检测/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.shanhujiang.OpenGLES08-------";
@@ -514,6 +514,7 @@
 				B954636C1E5AC46300D0D59A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B954636D1E5AC46300D0D59A /* Build configuration list for PBXNativeTarget "OpenGLES08-图像边缘检测Tests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +523,7 @@
 				B954636F1E5AC46300D0D59A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B95463701E5AC46300D0D59A /* Build configuration list for PBXNativeTarget "OpenGLES08-图像边缘检测UITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +532,7 @@
 				B95463721E5AC46300D0D59A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

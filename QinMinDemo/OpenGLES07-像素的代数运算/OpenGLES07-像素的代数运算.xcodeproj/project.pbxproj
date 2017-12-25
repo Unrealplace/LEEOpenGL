@@ -506,7 +506,7 @@
 				TargetAttributes = {
 					B94753A11E5575A1000BB369 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = H57Q7L6C8G;
+						DevelopmentTeam = 9BQNL96S8U;
 						ProvisioningStyle = Automatic;
 					};
 					B94753BA1E5575A1000BB369 = {
@@ -739,7 +739,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H57Q7L6C8G;
+				DEVELOPMENT_TEAM = 9BQNL96S8U;
 				INFOPLIST_FILE = "OpenGLES07-像素的代数运算/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -759,7 +759,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H57Q7L6C8G;
+				DEVELOPMENT_TEAM = 9BQNL96S8U;
 				INFOPLIST_FILE = "OpenGLES07-像素的代数运算/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
