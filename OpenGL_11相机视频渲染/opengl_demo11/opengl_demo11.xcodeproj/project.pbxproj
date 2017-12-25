@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B5B3D421FF09D6200BB1FFD /* GLRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5B3D411FF09D6200BB1FFD /* GLRender.m */; };
+		2B5B3D5F1FF0A1CA00BB1FFD /* GLUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = 2B5B3D441FF0A1A700BB1FFD /* GLUtil.c */; };
+		2B5B3D611FF0A1F200BB1FFD /* libyuv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B5B3D5E1FF0A1A800BB1FFD /* libyuv.a */; };
+		2B5B3D651FF0A2A200BB1FFD /* GLTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5B3D641FF0A2A200BB1FFD /* GLTexture.m */; };
 		B6225D011FEFA5E900E085ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6225D001FEFA5E900E085ED /* AppDelegate.m */; };
 		B6225D041FEFA5E900E085ED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6225D031FEFA5E900E085ED /* ViewController.m */; };
 		B6225D071FEFA5E900E085ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6225D051FEFA5E900E085ED /* Main.storyboard */; };
@@ -16,6 +20,32 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B5B3D401FF09D6200BB1FFD /* GLRender.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLRender.h; sourceTree = "<group>"; };
+		2B5B3D411FF09D6200BB1FFD /* GLRender.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLRender.m; sourceTree = "<group>"; };
+		2B5B3D441FF0A1A700BB1FFD /* GLUtil.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GLUtil.c; sourceTree = "<group>"; };
+		2B5B3D451FF0A1A700BB1FFD /* GLUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLUtil.h; sourceTree = "<group>"; };
+		2B5B3D4A1FF0A1A800BB1FFD /* basic_types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = basic_types.h; sourceTree = "<group>"; };
+		2B5B3D4B1FF0A1A800BB1FFD /* compare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = compare.h; sourceTree = "<group>"; };
+		2B5B3D4C1FF0A1A800BB1FFD /* convert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = convert.h; sourceTree = "<group>"; };
+		2B5B3D4D1FF0A1A800BB1FFD /* convert_argb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = convert_argb.h; sourceTree = "<group>"; };
+		2B5B3D4E1FF0A1A800BB1FFD /* convert_from.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = convert_from.h; sourceTree = "<group>"; };
+		2B5B3D4F1FF0A1A800BB1FFD /* convert_from_argb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = convert_from_argb.h; sourceTree = "<group>"; };
+		2B5B3D501FF0A1A800BB1FFD /* cpu_id.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cpu_id.h; sourceTree = "<group>"; };
+		2B5B3D511FF0A1A800BB1FFD /* format_conversion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = format_conversion.h; sourceTree = "<group>"; };
+		2B5B3D521FF0A1A800BB1FFD /* mjpeg_decoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mjpeg_decoder.h; sourceTree = "<group>"; };
+		2B5B3D531FF0A1A800BB1FFD /* planar_functions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = planar_functions.h; sourceTree = "<group>"; };
+		2B5B3D541FF0A1A800BB1FFD /* rotate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rotate.h; sourceTree = "<group>"; };
+		2B5B3D551FF0A1A800BB1FFD /* rotate_argb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rotate_argb.h; sourceTree = "<group>"; };
+		2B5B3D561FF0A1A800BB1FFD /* row.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = row.h; sourceTree = "<group>"; };
+		2B5B3D571FF0A1A800BB1FFD /* scale.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scale.h; sourceTree = "<group>"; };
+		2B5B3D581FF0A1A800BB1FFD /* scale_argb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scale_argb.h; sourceTree = "<group>"; };
+		2B5B3D591FF0A1A800BB1FFD /* scale_row.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scale_row.h; sourceTree = "<group>"; };
+		2B5B3D5A1FF0A1A800BB1FFD /* version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		2B5B3D5B1FF0A1A800BB1FFD /* video_common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = video_common.h; sourceTree = "<group>"; };
+		2B5B3D5C1FF0A1A800BB1FFD /* libyuv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libyuv.h; sourceTree = "<group>"; };
+		2B5B3D5E1FF0A1A800BB1FFD /* libyuv.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libyuv.a; sourceTree = "<group>"; };
+		2B5B3D631FF0A2A200BB1FFD /* GLTexture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLTexture.h; sourceTree = "<group>"; };
+		2B5B3D641FF0A2A200BB1FFD /* GLTexture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLTexture.m; sourceTree = "<group>"; };
 		B6225CFC1FEFA5E900E085ED /* opengl_demo11.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = opengl_demo11.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6225CFF1FEFA5E900E085ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B6225D001FEFA5E900E085ED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -33,17 +63,103 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B5B3D611FF0A1F200BB1FFD /* libyuv.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B5B3D431FF0A1A700BB1FFD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2B5B3D441FF0A1A700BB1FFD /* GLUtil.c */,
+				2B5B3D451FF0A1A700BB1FFD /* GLUtil.h */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2B5B3D461FF0A1A800BB1FFD /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				2B5B3D471FF0A1A800BB1FFD /* libyuv */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		2B5B3D471FF0A1A800BB1FFD /* libyuv */ = {
+			isa = PBXGroup;
+			children = (
+				2B5B3D481FF0A1A800BB1FFD /* include */,
+				2B5B3D5D1FF0A1A800BB1FFD /* lib */,
+			);
+			path = libyuv;
+			sourceTree = "<group>";
+		};
+		2B5B3D481FF0A1A800BB1FFD /* include */ = {
+			isa = PBXGroup;
+			children = (
+				2B5B3D491FF0A1A800BB1FFD /* libyuv */,
+				2B5B3D5C1FF0A1A800BB1FFD /* libyuv.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		2B5B3D491FF0A1A800BB1FFD /* libyuv */ = {
+			isa = PBXGroup;
+			children = (
+				2B5B3D4A1FF0A1A800BB1FFD /* basic_types.h */,
+				2B5B3D4B1FF0A1A800BB1FFD /* compare.h */,
+				2B5B3D4C1FF0A1A800BB1FFD /* convert.h */,
+				2B5B3D4D1FF0A1A800BB1FFD /* convert_argb.h */,
+				2B5B3D4E1FF0A1A800BB1FFD /* convert_from.h */,
+				2B5B3D4F1FF0A1A800BB1FFD /* convert_from_argb.h */,
+				2B5B3D501FF0A1A800BB1FFD /* cpu_id.h */,
+				2B5B3D511FF0A1A800BB1FFD /* format_conversion.h */,
+				2B5B3D521FF0A1A800BB1FFD /* mjpeg_decoder.h */,
+				2B5B3D531FF0A1A800BB1FFD /* planar_functions.h */,
+				2B5B3D541FF0A1A800BB1FFD /* rotate.h */,
+				2B5B3D551FF0A1A800BB1FFD /* rotate_argb.h */,
+				2B5B3D561FF0A1A800BB1FFD /* row.h */,
+				2B5B3D571FF0A1A800BB1FFD /* scale.h */,
+				2B5B3D581FF0A1A800BB1FFD /* scale_argb.h */,
+				2B5B3D591FF0A1A800BB1FFD /* scale_row.h */,
+				2B5B3D5A1FF0A1A800BB1FFD /* version.h */,
+				2B5B3D5B1FF0A1A800BB1FFD /* video_common.h */,
+			);
+			path = libyuv;
+			sourceTree = "<group>";
+		};
+		2B5B3D5D1FF0A1A800BB1FFD /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				2B5B3D5E1FF0A1A800BB1FFD /* libyuv.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		2B5B3D601FF0A1F200BB1FFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2B5B3D621FF0A29600BB1FFD /* GLTexture */ = {
+			isa = PBXGroup;
+			children = (
+				2B5B3D631FF0A2A200BB1FFD /* GLTexture.h */,
+				2B5B3D641FF0A2A200BB1FFD /* GLTexture.m */,
+			);
+			path = GLTexture;
+			sourceTree = "<group>";
+		};
 		B6225CF31FEFA5E900E085ED = {
 			isa = PBXGroup;
 			children = (
 				B6225CFE1FEFA5E900E085ED /* opengl_demo11 */,
 				B6225CFD1FEFA5E900E085ED /* Products */,
+				2B5B3D601FF0A1F200BB1FFD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +174,15 @@
 		B6225CFE1FEFA5E900E085ED /* opengl_demo11 */ = {
 			isa = PBXGroup;
 			children = (
+				2B5B3D621FF0A29600BB1FFD /* GLTexture */,
+				2B5B3D431FF0A1A700BB1FFD /* Utils */,
+				2B5B3D461FF0A1A800BB1FFD /* Vendors */,
 				B6225CFF1FEFA5E900E085ED /* AppDelegate.h */,
 				B6225D001FEFA5E900E085ED /* AppDelegate.m */,
 				B6225D021FEFA5E900E085ED /* ViewController.h */,
 				B6225D031FEFA5E900E085ED /* ViewController.m */,
+				2B5B3D401FF09D6200BB1FFD /* GLRender.h */,
+				2B5B3D411FF09D6200BB1FFD /* GLRender.m */,
 				B6225D051FEFA5E900E085ED /* Main.storyboard */,
 				B6225D081FEFA5E900E085ED /* Assets.xcassets */,
 				B6225D0A1FEFA5E900E085ED /* LaunchScreen.storyboard */,
@@ -142,6 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B5B3D5F1FF0A1CA00BB1FFD /* GLUtil.c in Sources */,
+				2B5B3D421FF09D6200BB1FFD /* GLRender.m in Sources */,
+				2B5B3D651FF0A2A200BB1FFD /* GLTexture.m in Sources */,
 				B6225D041FEFA5E900E085ED /* ViewController.m in Sources */,
 				B6225D0F1FEFA5E900E085ED /* main.m in Sources */,
 				B6225D011FEFA5E900E085ED /* AppDelegate.m in Sources */,
@@ -279,10 +403,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H57Q7L6C8G;
+				DEVELOPMENT_TEAM = 9BQNL96S8U;
 				INFOPLIST_FILE = opengl_demo11/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/opengl_demo11/Vendors/libyuv/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.LiYang.start.opengl-demo11";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -294,10 +422,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H57Q7L6C8G;
+				DEVELOPMENT_TEAM = 9BQNL96S8U;
 				INFOPLIST_FILE = opengl_demo11/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/opengl_demo11/Vendors/libyuv/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.LiYang.start.opengl-demo11";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
